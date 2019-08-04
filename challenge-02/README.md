@@ -29,10 +29,12 @@ function retorna_valor(valor) {
 }
 
 // Invoque a função criada acima.
-?
+retorna_valor(3)
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
+/*
+  O valor da variável agora é: 3
+*/
 
 /*
 Crie uma função com as seguintes características:
