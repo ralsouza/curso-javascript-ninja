@@ -76,10 +76,8 @@ Crie uma função com as seguintes características:
 function calc2 ( a, b, c) {
   if ( a !== undefined && b === undefined && c === undefined ) {
     return 'O valor do parâmetro a é: ' + a;
-    } else if ( a === undefined && b !== undefined && c === undefined ) {
-      return 'O valor do parâmetro b é: ' + b;
-    } else if ( a === undefined && b === undefined && c !== undefined ) {
-      return 'O valor do parâmetro c é: ' + c;
+    // Se o a não for preenchido, com certeza b e c também não serão.
+    // Logo não é necessário testar se b e c foram preenchidos.
     } else if ( a !== undefined && b !== undefined && c === undefined ) {
       soma1 = a + b;
       return 'A soma de a com b é: ' + soma1;
