@@ -81,12 +81,6 @@ function calc2 ( a, b, c) {
     } else if ( a !== undefined && b !== undefined && c === undefined ) {
       soma1 = a + b;
       return 'A soma de a com b é: ' + soma1;
-    } else if ( a !== undefined && b === undefined && c !== undefined ) {
-      soma2 = a + c;
-      return 'A soma de a com c é: ' + soma2;
-    } else if ( a === undefined && b !== undefined && c !== undefined ) {
-      soma3 = b + c;
-      return 'A soma de b com c é: ' + soma3;
     } else if ( a !== undefined && b !== undefined && c !== undefined ) {
       soma4 = ( a + b ) / c;
       return 'O resultado do cálculo dos 3 parâmetros é: ' + soma4;
