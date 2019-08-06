@@ -100,5 +100,15 @@ function calc2 ( a, b, c) {
 }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+// calc2();
+// false
+
+// calc2(2);
+// 'O valor do parâmetro a é: 2'
+
+// calc2(2, 4);
+// 'A soma de a com b é: 6'
+
+// calc2( 2, 4, 5);
+
 ```
