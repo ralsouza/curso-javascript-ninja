@@ -24,7 +24,8 @@ var pessoa
   altura: 1.85,
   peso: 86.5,
   andando: false,
-  caminhouQuantosMetros: 0 }
+  caminhouQuantosMetros: 0 
+};
 
 /*
 Adicione um método ao objeto `pessoa` chamado `fazerAniversario`. O método deve
