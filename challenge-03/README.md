@@ -182,8 +182,28 @@ deve conter no retorno da frase acima é "metro" no lugar de "metros".
 método), que será concatenada com a frase de retorno, mostrando a resposta
 correta, de acordo com os dados inseridos no objeto.
 */
-?
+pessoa.apresentacao = function() {
+	// Valores default serão configurados conforme nas variáveis abaixo:
+	var strGenero = 'o';
+	var qtdIdade  = 'anos';
+	var qtdDista  = 'metros';
+
+	if ( pessoa.genero === 'Feminino' ) {
+		strGenero = 'a';
+	}
+
+	if ( pessoa.idade === 1 ) {
+		qtdIdade = 'ano';
+	}
+
+	if ( pessoa.caminhouQuantosMetros === 1 ) {
+		qtdDista = 'metro';
+	}
+
+	return 'Olá, eu sou ' + strGenero + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + pessoa.idade + ' ' + qtdIdade + ', ' + pessoa.altura + ', meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + qtdDista + '.';
+
+};
 
 // Agora, apresente-se ;)
-?
+pessoa.apresentacao(); \\ 'Olá, eu sou o Rafael Lima, tenho 42 anos, 1.85, meu peso é 86.5 e, só hoje, eu já caminhei 11 metros.'
 ```
