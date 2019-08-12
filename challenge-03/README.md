@@ -200,7 +200,7 @@ pessoa.apresentacao = function() {
 		qtdDista = 'metro';
 	}
 
-	return 'Olá, eu sou ' + strGenero + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + pessoa.idade + ' ' + qtdIdade + ', ' + pessoa.altura + ', meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + qtdDista + '.';
+	return 'Olá, eu sou ' + strGenero + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + pessoa.idade + ' ' + qtdIdade + ', ' + pessoa.altura + ' m, meu peso é ' + pessoa.peso + ' kg e só hoje eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + qtdDista + '.';
 
 };
 
