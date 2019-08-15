@@ -7,7 +7,21 @@ um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
-?
+var isTruthy = function ( x ) {
+  var y = x ? true : false;
+  return y;
+};
+   
+// Outras formas bem mais simples
+// Opção 1 - Com condicional ternário
+var isTruthy2 = function ( param ) {
+  return param ? true : false;
+};
+
+// Opção 2 - Ninja - Equivalente booleano
+var isTruthy3 = function ( param ) {
+  return !!param;
+};
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
 ?
