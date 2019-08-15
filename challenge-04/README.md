@@ -24,12 +24,44 @@ var isTruthy3 = function ( param ) {
 };
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-?
+isTruthy(0);
+
+isTruthy(-0);
+
+isTruthy(NaN);
+
+isTruthy(null);
+
+isTruthy(undefined);
+
+isTruthy(''); 
+
+isTruthy("");
+
+isTruthy( 20 * 0); // Retorna 0 no cálculo, logo, falsy
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
-?
+isTruthy( 1 );
+
+isTruthy( 'Uma String' );
+
+isTruthy( "Uma String" );
+
+isTruthy( {} );
+
+isTruthy( [] );
+
+isTruthy( function () {} );
+
+isTruthy( '0' );
+
+isTruthy( 20 + 20 );
+
+isTruthy( [1,2,3] );
+
+isTruthy( {a: 1, b: 2, c: 3} );
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
