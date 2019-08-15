@@ -24,21 +24,21 @@ var isTruthy3 = function ( param ) {
 };
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-isTruthy(0);
+isTruthy( 0 );
 
-isTruthy(-0);
+isTruthy( -0 );
 
-isTruthy(NaN);
+isTruthy( NaN );
 
-isTruthy(null);
+isTruthy( null );
 
-isTruthy(undefined);
+isTruthy( undefined );
 
-isTruthy(''); 
+isTruthy( '' ); 
 
-isTruthy("");
+isTruthy( "" );
 
-isTruthy( 20 * 0); // Retorna 0 no cálculo, logo, falsy
+isTruthy( 20 * 0 ); // Retorna 0 no cálculo, logo, falsy
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
