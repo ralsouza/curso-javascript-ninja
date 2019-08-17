@@ -9,19 +9,22 @@ para o contrário.
 */
 var isTruthy = function( param ) {
   return !!param
-}
+};
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-isTruthy(0);
+isTruthy( 0 );
 
-isTruthy(null);
+isTruthy( null );
 
-isTruthy('');
+isTruthy( '' );
 
-isTruthy(undefined);
+isTruthy( undefined );
 
-isTruthy(-0);
+isTruthy( -0 );
 
+isTruthy( false );
+
+isTruthy( NaN );
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
