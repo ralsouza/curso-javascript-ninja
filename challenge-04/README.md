@@ -29,7 +29,25 @@ isTruthy( NaN );
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
+isTruthy( true );
 
+isTruthy( 1 );
+
+isTruthy( 'Rafael' );
+
+isTruthy( funtion() {} );
+
+isTruthy( {} );
+
+isTruthy( [] );
+
+isTruthy( { nome: 'Rafael' } );
+
+isTruthy( [1, 2, 3] );
+
+isTruthy( 20 * 3 );
+
+isTruthy( 10 + 50 );
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
@@ -43,7 +61,14 @@ seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
 - `assentos` - Number - cinco por padrão
 - `quantidadePessoas` - Number - zero por padrão
 */
-
+var carro = {
+  marca: 'Ford',
+  modelo: 'Fiesta',
+  placa: 'ABC-1234',
+  ano: 2014,
+  cor: 'vermelho',
+  
+};
 
 /*
 Crie um método chamado `mudarCor` que mude a cor do carro conforme a cor
