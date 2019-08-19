@@ -138,9 +138,9 @@ carro.addPessoas = function( param ) {
   var assentosDisp = carro.assentos - carro.quantidadePessoas;
   
   if ( assentosDisp === 0 ) {
-    console.log ('O carro está lotado!');
+    return 'O carro está lotado!';
   } else if ( param > assentosDisp ) {
-    console.log ('Só '+ (assentosDisp === 1 ? 'cabe' : 'cabem') +' mais ' + assentosDisp + ' ' + (assentosDisp === 1 ? 'pessoa' : 'pessoas'));
+    return 'Só '+ (assentosDisp === 1 ? 'cabe' : 'cabem') +' mais ' + assentosDisp + ' ' + (assentosDisp === 1 ? 'pessoa' : 'pessoas');
   } else {
     carro.quantidadePessoas += param;
   }
