@@ -174,20 +174,20 @@ carro.obterCor(); // 'verde musgo'
 carro.obterMarcaModelo(); // 'Este carro é um Ford Fiesta'
 
 // Adicione 2 pessoas no carro.
-?
+carro.addPessoas(2); // "Já temos 2 pessoas no carro!"
 
 // Adicione mais 4 pessoas no carro.
-?
+carro.addPessoas(4); // "Só cabem mais 3 pessoas"
 
 // Faça o carro encher.
-?
+carro.addPessoas(3); // "Já temos 5 pessoas no carro!"
 
 // Tire 4 pessoas do carro.
-?
+carro.quantidadePessoas -= 4; \\ 1
 
 // Adicione 10 pessoas no carro.
-?
+carro.addPessoas(10); \\ "Só cabem mais 4 pessoas"
 
 // Quantas pessoas temos no carro?
-?
+carro.quantidadePessoas; \\ 1
 ```
