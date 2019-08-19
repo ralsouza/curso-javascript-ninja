@@ -135,16 +135,15 @@ citado acima, no lugar de "pessoas".
 */
 carro.addPessoas = function( param ) {
 
-  var assentosDisp = param - carro.quantidadePessoas;
-
-  if ( carro.quantidadePessoas === carro.assentos ) {
-    return 'O carro está lotado!';
+  var assentosDisp = carro.assentos - carro.quantidadePessoas;
+  
+  if ( assentosDisp === 0 ) {
+    console.log ('O carro está lotado!');
   } else if ( param > assentosDisp ) {
-    return 'Só cabem mais ' + assentosDisp + ' pessoa!';
+    console.log ('Só '+ (assentosDisp === 1 ? 'cabe' : 'cabem') +' mais ' + assentosDisp + ' ' + (assentosDisp === 1 ? 'pessoa' : 'pessoas'));
+  } else {
+    carro.quantidadePessoas += param;
   }
-  
-  
-  
   
   return 'Já temos ' + carro.quantidadePessoas + ' pessoas no carro!';
 };
@@ -157,22 +156,22 @@ retornar algum valor.
 
 Qual a cor atual do carro?
 */
-?
+carro.obterCor(); // 'vermelho'
 
-// Mude a cor do carro para vermelho.
-?
+// Mude a cor do carro para azul.
+carro.mudaCor('azul');
 
 // E agora, qual a cor do carro?
-?
+carro.obterCor(); // 'azul'
 
 // Mude a cor do carro para verde musgo.
-?
+carro.mudaCor('verde musgo');
 
 // E agora, qual a cor do carro?
-?
+carro.obterCor(); // 'verde musgo'
 
 // Qual a marca e modelo do carro?
-?
+carro.obterMarcaModelo(); // 'Este carro é um Ford Fiesta'
 
 // Adicione 2 pessoas no carro.
 ?
