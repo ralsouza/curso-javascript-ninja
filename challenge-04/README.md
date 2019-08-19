@@ -107,9 +107,7 @@ Crie um método chamado `obterMarcaModelo`, que retorne:
 Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
 carro.obterMarcaModelo = function() {
-  var marca = carro.obterMarca();
-  var modelo = carro.obterModelo();
-  return 'Este carro é um ' + marca + ' ' + modelo;
+  return 'Este carro é um ' + carro.obterMarca() + ' ' + carro.obterModelo();
 };
 
 /*
@@ -128,7 +126,18 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 - Se couber somente mais uma pessoa, mostrar a palavra "pessoa" no retorno
 citado acima, no lugar de "pessoas".
 */
-?
+carro.addPessoas = function( param ) {
+   if ( carro.quantidadePessoas === 5 ) {
+    return 'O carro já está lotado';
+   }
+   
+   
+   if ( param > 5 &&  ) {
+   
+   }
+  
+  return 'Já temos ' + carro.quantidadePessoas + ' pessoas no carro!';
+};
 
 /*
 Agora vamos verificar algumas informações do carro. Para as respostas abaixo,
