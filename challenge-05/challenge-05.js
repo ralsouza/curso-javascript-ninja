@@ -23,7 +23,7 @@ no primeiro parâmetro. O índice usado para retornar o valor, deve ser o númer
 segundo parâmetro.
 */
 function funcIndex( arr, idx ) {
-  return arr[idx];
+  return arr[ idx ];
 }
 
 /*
@@ -35,12 +35,12 @@ var arr2 = [12, 'Rafael', null, undefined, true];
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-funcIndex( arr2,0)
-funcIndex( arr2,1)
-funcIndex( arr2,2)
-funcIndex( arr2,3)
-funcIndex( arr2,4)
-funcIndex( arr2,5)
+console.log( funcIndex( arr2,0) );
+console.log( funcIndex( arr2,1) );
+console.log( funcIndex( arr2,2) );
+console.log( funcIndex( arr2,3) );
+console.log( funcIndex( arr2,4) );
+console.log( funcIndex( arr2,5) );
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
