@@ -56,6 +56,20 @@ propriedades:
 - Se o parâmetro não for passado, a função deve retornar o objeto com todos
 os livros.
 */
+/*
+Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
+livro. Dentro dessa função, declare uma variável que recebe um objeto com as
+seguintes características:
+- esse objeto irá receber 3 propriedades, que serão nomes de livros;
+- cada uma dessas propriedades será um novo objeto, que terá outras 3
+propriedades:
+    - `quantidadePaginas` - Number (quantidade de páginas)
+    - `autor` - String
+    - `editora` - String
+- A função deve retornar o objeto referente ao livro passado por parâmetro.
+- Se o parâmetro não for passado, a função deve retornar o objeto com todos
+os livros.
+*/
 function livro( nome ) {
 	var livros = {
 		livro1: {
@@ -77,15 +91,16 @@ function livro( nome ) {
 	
 	if ( nome != undefined ) {
 		return livros[nome];
+	} else {
+		return livros;
 	}
-
-	return livros;
 }
+
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
 */
-// ?
+console.log(livro());
 
 /*
 Ainda com a função acima, imprima a quantidade de páginas de um livro qualquer,
